@@ -12,15 +12,15 @@
     "url": "git://github.com/spicydonuts/purescript-react-basic-hooks.git"
   },
   "dependencies": {
-    "purescript-prelude": "^4.1.0",
-    "purescript-console": "^4.2.0",
-    "purescript-effect": "^2.0.0",
-    "purescript-react-basic": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
-    "purescript-indexed-monad": "^1.0.0",
-    "purescript-unsafe-reference": "^3.0.1",
-    "purescript-aff": "^5.1.1"
+    "purescript-prelude": "^5.0.1",
+    "purescript-console": "^5.0.0",
+    "purescript-effect": "^3.0.0",
+    "purescript-react-basic": "^16.0.0",
+    "purescript-indexed-monad": "^2.0.1",
+    "purescript-unsafe-reference": "^4.0.0",
+    "purescript-aff": "^6.0.0"
   },
   "devDependencies": {
-    "purescript-psci-support": "^4.0.0"
+    "purescript-psci-support": "^5.0.0"
   }
 }

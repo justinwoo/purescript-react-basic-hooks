@@ -23,7 +23,7 @@ import Type.Equality (class TypeEquals)
 -- | body, i.e. during "render". This includes hooks and ends with
 -- | returning JSX (see `pure`), but does not allow arbitrary side
 -- | effects.
-newtype Render x y a
+newtype Render (x :: Type) (y :: Type) (a :: Type)
   = Render (Effect a)
 
 -- | Rename/alias a chain of hooks. Useful for exposing a single
@@ -117,7 +117,7 @@ unsafeRenderEffect = Render
 
 -- | Discards
 type Pure a
-  = forall hooks. Render hooks hooks a
+  = forall (hooks :: Type). Render hooks hooks a
 
 type Hook (newHook :: Type -> Type) a
   = forall hooks. Render hooks (newHook hooks) a
